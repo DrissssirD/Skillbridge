@@ -57,32 +57,20 @@ export function Login() {
       <div className="hidden sm:block">
         <img src={picture} />
       </div>
-      <div className="flex flex-col flex-1 items-center  ">
-      <div className="flex sm:mt-[58px]">
-        {options.map((option) => (
-          <button
-            key={option.value} 
-            onClick={() => setFocus(option.value)}
-            className={`text-[#4640DE] text-base h-[40px] w-[115px] ${
-              focus === option.value ? "bg-[#CCCCF5]" : ""
-            }`}
-          >
-            {option.label}
-          </button>
-        ))}
-      </div>
+      <div className="flex flex-col flex-1 items-center  sm:mt-[58px]">
+      
       <div>
-        <h1 className="text-[#202430] text-4xl sm:mt-6">Get more opportunities</h1>
+        <h1 className="text-[#202430] text-4xl sm:mt-6 font-semibold">Welcome Back</h1>
       </div>
       <div className="sm:mt-6">
         <button className="text-base text-[#4640DE] sm:w-[408px] h-[50px] border-2 border-[#A8ADB7] font-bold flex gap-3 justify-center items-center hover:bg-[#CCCCF5] hover:text-white">
           <img src={googleIcon} />
-          Sign Up with Google
+          Login with Google
         </button>
       </div>
       <div className="flex items-center gap-4 sm:mt-6">
         <hr className="flex-1 w-[109px] border"/>
-        <h4>Or sign up with email</h4>
+        <h4>Or login with email</h4>
         <hr  className="flex-1 w-[109px] border"/>
         
       </div>
@@ -106,7 +94,7 @@ export function Login() {
 
       <div className="flex gap-2 mt-6">
         <h4 className="text-[#202430]">Already have an account?</h4>
-        <Link className="text-[#4640DE] font-semibold">Login</Link>
+        <Link to='Login'  className="text-[#4640DE] font-semibold">Login</Link>
       </div>
       <div className="sm:w-[408px] h-[44px] mt-6">
         <h4 className="text-[#A8ADB7]">
