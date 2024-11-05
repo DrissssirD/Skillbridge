@@ -79,7 +79,7 @@ export function SignUp() {
         <h1 className="text-[#202430] text-4xl mt-6 font-semibold">Get more opportunities</h1>
 
         {/* Google SignUp button */}
-        <button className="text-base text-[#4640DE] w-[408px] h-[50px] border-2 border-[#A8ADB7] font-bold flex gap-3 justify-center items-center hover:bg-[#CCCCF5] hover:text-white mt-6">
+        <button className="text-base w-full text-[#4640DE] sm:w-[408px] h-[50px] border-2 border-[#A8ADB7] font-bold flex gap-3 justify-center items-center hover:bg-[#CCCCF5] hover:text-white mt-6">
           <img src={googleIcon} alt="Google Icon" />
           Sign Up with Google
         </button>
@@ -92,7 +92,7 @@ export function SignUp() {
         </div>
 
         {/* Form fields */}
-        <div className="mt-6 flex flex-col gap-6">
+        <div className="mt-6 flex flex-col gap-6 w-full">
           {['name', 'email', 'password'].map((field) => (
             <div key={field}>
               <Input
@@ -107,7 +107,7 @@ export function SignUp() {
         </div>
 
         {/* Submit Button */}
-        <button onClick={handleSubmit} className="w-[408px] h-[50px] bg-[#4640DE] mt-6 text-white">
+        <button onClick={handleSubmit} className="sm:w-[408px] h-[50px] bg-[#4640DE] mt-6 text-white w-full">
           Continue
         </button>
 

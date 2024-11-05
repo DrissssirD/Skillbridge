@@ -60,7 +60,7 @@ export function Login() {
       </div>
       
       {/* Right-side login form */}
-      <div className="flex flex-col flex-1 items-center sm:mt-[58px] justify-center">
+      <div className="flex flex-col flex-1 items-center sm:mt-[58px] justify-center ">
         {/* Job Seeker and Company selection buttons */}
         <div className="flex flex-row">
           {['jobSeeker', 'company'].map((type) => (
@@ -77,7 +77,7 @@ export function Login() {
         <h1 className="text-[#202430] text-4xl mt-6 font-semibold">Welcome Back</h1>
         
         {/* Google Login button */}
-        <button className="text-base text-[#4640DE] w-[408px] h-[50px] border-2 border-[#A8ADB7] font-bold flex gap-3 justify-center items-center hover:bg-[#CCCCF5] hover:text-white mt-6">
+        <button className="w-full  text-base text-[#4640DE] sm:w-[408px] h-[50px] border-2 border-[#A8ADB7] font-bold flex gap-3 justify-center items-center hover:bg-[#CCCCF5] hover:text-white mt-6">
           <img src={googleIcon} alt="Google Icon" />
           Login with Google
         </button>
@@ -90,7 +90,7 @@ export function Login() {
         </div>
 
         {/* Form fields */}
-        <div className="mt-6 flex flex-col gap-6">
+        <div className="mt-6 flex flex-col gap-6 w-full">
           {['email', 'password'].map((field) => (
             <div key={field}>
               <Input
@@ -105,7 +105,7 @@ export function Login() {
         </div>
 
         {/* Submit button */}
-        <button onClick={handleSubmit} className="w-[408px] h-[50px] bg-[#4640DE] mt-6 text-white">
+        <button onClick={handleSubmit} className="sm:w-[408px] h-[50px] bg-[#4640DE] mt-6 text-white w-full">
           Continue
         </button>
 
