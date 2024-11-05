@@ -16,8 +16,8 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <div className="mt-16 sm:flex  flex flex-col">
-      <div className="flex flex-col">
+    <div className="mt-16 sm:flex sm:flex-row  flex flex-col">
+      <div className="flex flex-col flex-1">
         <div className="flex gap-4  items-center">
           <img src={logo} className="rounded-full h-8 w-8" />
           <h1 className="text-2xl text-white">Cyprus Work</h1>
@@ -29,7 +29,7 @@ export function Footer() {
         </h4>
       </div>
 
-      <div className="flex flex-row mt-6">
+      <div className="flex flex-row mt-6 sm:mt-0 flex-1">
         <div className="flex-1">
           <h2 className="text-lg sm:text-3xl font-semibold mb-4 text-white">
             About
