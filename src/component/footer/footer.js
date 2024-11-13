@@ -20,7 +20,7 @@ export function Footer() {
       <div className="flex flex-col flex-1">
         <div className="flex gap-4  items-center">
           <img src={logo} className="rounded-full h-8 w-8" />
-          <h1 className="text-2xl text-white">Cyprus Work</h1>
+          <h1 className="text-2xl text-white">Skill Bridge</h1>
         </div>
 
         <h4 className="sm:w-[376px] w-[250px] text-[#D6DDEB] mt-8 text-base font-normal">

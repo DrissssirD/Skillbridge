@@ -24,7 +24,7 @@ export function SearchBar() {
         />
       </div>
       <button className="bg-[#4640DE] text-white h-10 md:h-[57px] w-full md:w-[209px] font-semibold text-base md:text-xl mt-1">
-        Search my job
+        Search for a job
       </button>
     </div>
   );

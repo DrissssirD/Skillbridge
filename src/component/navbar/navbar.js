@@ -15,7 +15,7 @@ export function NavBar() {
         </div>
         <div className="flex sm:flex-row gap-2 sm:gap-8 text-white items-start sm:items-center">
           <h1 className="text-base sm:text-lg md:text-xl font-semibold">
-            Cyprus Work
+            Skill Bridge
           </h1>
           <Link className="text-sm sm:text-base md:text-lg">Find Jobs</Link>
         </div>

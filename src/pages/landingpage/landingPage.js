@@ -29,23 +29,23 @@ const sections = [
 export function LandingPage() {
   return (
     <div className="bg-[#25324B] min-h-screen p-4 xl:px-32 md:px-5">
-      <NavBar />
+      <NavBar />	
 
-      {/* Main Heading Section */}
-      <div className="mt-5 sm:mt-10 flex flex-col gap-3 sm:gap-5">
-        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug">
-          Discover <br />
-          More than <br />
-        </h1>
-        <h1 className="text-blue-500 text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-          1000+ jobs
-        </h1>
-        <img
-          className="bg-[#25324B] w-1/2 sm:w-[35%] sm:mt-3 " // Centering the image
-          src={line}
-          alt="Decorative line"
-        />
-      </div>
+      {/* Main Heading Section */}	
+      <div className="mt-5 sm:mt-10 flex flex-col gap-3 sm:gap-5">	
+        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-snug">	
+          Discover <br />	
+          More than <br />	
+        </h1>	
+        <h1 className="text-blue-500 text-3xl sm:text-5xl md:text-6xl lg:text-7xl">	
+          1000+ jobs	
+        </h1>	
+        <img	
+          className="bg-[#25324B] w-1/2 sm:w-[35%] sm:mt-3 " // Centering the image	
+          src={line}	
+          alt="Decorative line"	
+        />	
+      </div>	
 
       {/* Subtitle Section */}
       <div className="mt-4 sm:mt-6 md:mt-8 lg:mt-10">
