@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import { Input } from "../../component/İnput/input";
 import googleIcon from "./googleIcon.svg";
 import picture from "./Element.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
 
 export function Login() {
+  const Navigate=useNavigate();
+
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -47,15 +52,14 @@ export function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (handleValidation()) {
-      alert("Form submitted successfully!");
-      // Add your API call or database submission here
+        Navigate("/Dashboard/Home")
     }
   };
 
   return (
     <div className="min-h-screen flex w-full p-2">
       {/* Left-side image for larger screens */}
-      <div className="hidden sm:block sm:min-h-screen">
+      <div className="hidden xl:block sm:min-h-screen">
         <img src={picture} className="sm:h-full sm:bg-cover sm:w-[500px] xl:w-[640px]" alt="Background" />
       </div>
       
@@ -90,7 +94,7 @@ export function Login() {
         </div>
 
         {/* Form fields */}
-        <div className="mt-6 flex flex-col gap-6 w-full">
+        <div className="mt-6 flex flex-col gap-6 w-full items-center">
           {['email', 'password'].map((field) => (
             <div key={field}>
               <Input
