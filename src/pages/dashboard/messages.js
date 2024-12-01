@@ -1,10 +1,16 @@
 import React from "react";
+import { TopBar } from "../../component/topBar/topBar";
+
 
 
 export function Messages(){
     return(
         <div> 
-            <h1>Hello</h1>
+             <div>
+           <TopBar pageName={'Messages'} />
+
+            </div>
+
         </div>
     )
 }

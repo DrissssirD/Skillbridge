@@ -5,13 +5,19 @@ import { Outlet } from "react-router-dom";
 
 
 
+
 export function DashBoard(){
     return(
         <div className="flex flex-row">
             <div>
                 <SideBar />
             </div>
-            <Outlet />
+            <div className="flex-1">
+            <Outlet/>
+            
+
+            </div>
+            
         </div>
     )
 }

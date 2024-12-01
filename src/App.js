@@ -9,6 +9,8 @@ import { Messages } from "./pages/dashboard/messages";
 import { MyApplication } from "./pages/dashboard/myapplication";
 import { FindJob } from "./pages/dashboard/findJob";
 import { Profile } from "./pages/dashboard/profile";
+import {Setting} from "./pages/dashboard/setting";
+import { HelpCenter } from "./pages/dashboard/helpCenter";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="My-application" element={<MyApplication />} />
         <Route path="Find-job" element={<FindJob />} />
         <Route path="Profile" element={<Profile />} />
+        <Route path="Settings" element={<Setting />} />
+        <Route path="HelpCenter" element={<HelpCenter />} />
 
 
         </Route>
