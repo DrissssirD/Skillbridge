@@ -54,7 +54,7 @@ export function TopBar({ pageName }) {
     <div className="w-full sm:h-28 flex justify-between sm:p-8 items-center border-b-2">
       <h1 className="text-[#25324B] text-4xl font-bold">{pageName}</h1>
       <div className="flex flex-row sm:gap-8 items-center">
-        <button onClick={() => handleNavigation("/")} className="border sm:w-[213px] sm:h-[50px] text-center">
+        <button onClick={() => handleNavigation("/")} className="border sm:w-[213px] sm:h-[50px] text-center border-[#CCCCF5]">
           <h4 className="text-[#4640DE] text-xl font-bold">Back to homepage</h4>
         </button>
         <img
